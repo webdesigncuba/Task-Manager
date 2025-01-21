@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '../../vendor/autoload.php';
+
+use Davidybertha\Task\Command\AddTaskCommand;
+use Davidybertha\Task\Command\DeleteTaskCommand;
+use Davidybertha\Task\Command\ListTaskCommand;
+use Davidybertha\Task\Command\UpdateTaskCommand;
+use Symfony\Component\Console\Application;
+
+
+$application = new Application();
+
+// Registrar el comando personalizado
+$application->add(new AddTaskCommand());
+$application->add(new ListTaskCommand());
+$application->add(new UpdateTaskCommand());
+$application->add(new DeleteTaskCommand());
+
+
+$application->run();
+

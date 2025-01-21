@@ -1,0 +1,19 @@
+{
+    "name": "davidybertha/task",
+    "description": "Task Manager",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Davidybertha\\Task\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Cordero Rosales",
+            "email": "webdesigncuba@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^7.2"
+    }
+}
